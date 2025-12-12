@@ -4,7 +4,6 @@ function bmiCalculate() {
     const weight = parseFloat(document.getElementById("weight").value);
     const height = parseFloat(document.getElementById("height").value);
 
-    // Validation
     if (!weight || !height || weight <= 0 || height <= 0) {
         document.getElementById("result").innerHTML =
             '<p class="error">Please enter valid weight and height!</p>';
